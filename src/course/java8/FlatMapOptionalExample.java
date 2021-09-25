@@ -17,7 +17,7 @@ public class FlatMapOptionalExample {
 		 
 		 System.out.println("Functional Programming : ");
 		 
-         Optional<String> optional = users.stream().map(user -> user.getPhoneNumbers().stream()).flatMap(stringStream -> stringStream.filter(phoneNo -> phoneNo.equals("18"))).findAny();		 
+         Optional<String> optional = users.stream().map(user -> user.getPhoneNumbers().stream()).flatMap(stringStream -> stringStream.filter(phoneNo -> phoneNo.equals("3"))).findAny();		 
 		 
          optional.ifPresent(System.out::println);
 	}

@@ -5,7 +5,13 @@ public class LoopTaskA implements Runnable{
 	
 	private int id;
 	private static int count = 0;
+    
+	
+	LoopTaskA(){
+		this.id = ++count;
+	}
 
+	
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
@@ -25,10 +31,4 @@ public class LoopTaskA implements Runnable{
 		
 		System.out.println("######## TASK -" + id + "> DONE #####");
 	}
-	
-	
-	LoopTaskA(){
-		this.id = ++count;
-	}
-
 }

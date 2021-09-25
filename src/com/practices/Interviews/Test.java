@@ -34,18 +34,23 @@ public class Test {
     	System.out.println(b);
     	
     	String x = new String("Cisco");
-    	String y = new String("Cisco");
     	String m = "Cisco";
+    	String n = "Cisco";
+    	String y = new String("Cisco");
     	String z = y;
     	//y = "Disco";
     	
     	System.out.println(x.hashCode());
     	System.out.println(y.hashCode());
     	System.out.println(z.hashCode());
+    	System.out.println(m.hashCode());
     	System.out.println(x.equals(y));
     	System.out.println(x.equals(z));
     	System.out.println(x == y);
     	System.out.println(y == z);
+    	System.out.println(x == m);
+    	System.out.println(m == n);
+    	System.out.println(n == y);
 	}
 
 }

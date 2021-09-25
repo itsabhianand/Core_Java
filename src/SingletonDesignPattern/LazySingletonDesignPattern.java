@@ -15,7 +15,7 @@ public class LazySingletonDesignPattern {
         }
 	}
    
-	 static class ABC {
+	static class ABC {
 		private static ABC obj;
 		
 		private ABC() {
